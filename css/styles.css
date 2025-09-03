@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --gold-500: hsl(31, 77%, 52%);
+  --cyan-800: hsl(184, 100%, 22%);
+  --green-950: hsl(179, 100%, 13%);
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --gray-100: hsl(0, 0%, 95%);
+}
+
+body {
+  line-height: 1.6;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.testimonials__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.testimonials__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 8rem;
+}
+
+.testimonials__card-item {
+  padding: 2.5rem;
+}
+
+.testimonials__card-item-sedans {
+  background-color: var(--gold-500);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.testimonials__card-item-suvs {
+  background-color: var(--cyan-800);
+}
+
+.testimonials__card-item-luxury {
+  background-color: var(--green-950);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.testimonials__card-header {
+  font-family: 'Big Shoulders', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.testimonials__card-description {
+  color: var(--transparent-white);
+  margin: 2rem 0;
+}
+
+.testimonials__card-button {
+  display: inline-block;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 50px;
+}
+
+.testimonials__card-button.sedans {
+  color: var(--gold-500);
+}
+
+.testimonials__card-button.suvs {
+  color: var(--cyan-800);
+}
+
+.testimonials__card-button.luxury {
+  color: var(--green-950);
+}
